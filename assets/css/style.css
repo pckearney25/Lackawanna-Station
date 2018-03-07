@@ -1,0 +1,42 @@
+/* Here we go. Deep breath Repo Man!. */
+body {
+    
+
+}
+
+.jumbotron {
+  background-image: url("../images/phoebe_snow.png");
+  background-size: 960px;
+  height: 380px;
+
+}
+
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}  
+
+#bootstrap-override1 {
+  background-color: rgba(94, 2, 2, 0.877);
+  color: white;
+  font-size: 12px;
+}
+
+
+#bootstrap-override2 {
+  background-color: rgba(94, 2, 2, 0.877);
+  color: white;
+  font-size: 12px;
+}
+
+
+.btn-scarlet{
+  background-color: rgba(94, 2, 2, 0.877);
+  color: white;
+}
+
+
+
