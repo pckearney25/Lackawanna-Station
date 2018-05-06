@@ -1,76 +1,27 @@
 # Lackawanna-Station
-Alternative version of Firebase Homework
 
-###     Setup
-### 
-	* Must use Firebase to store data, GitHub to backup project, and GithHub
-Pages to host finished site.
+## Overview
 
-###     Instructions
-### 
-	
-	* Make sure that your app suits this basic spec:
+In this application, a front end web page is connected to a Firebase database to display a simple train schedule. Data for the trains is contained in Firebase. Upon opening the application, this information is retrieved and shown to the user in a table. The schedule updates every minute. The user may also add a new train to the schedule. The app can also be used by multiple users simultaneously.
 
-	* When adding trains, administrators should be able to submit the
-following:
+## Installation
 
-	* Train Name
+Upon cloning, the application should run as written. A user wishing to create a connection to a new Firebase database will need to replace the code defining the "config" variable in the railway.js file. instructions for configuration can be found at https://firebase.google.com.
 
-	* Destination
+## Authors
 
-	* First Train Time -- in military time
+This application was coded by Patrick Kearney
 
-	* Frequency -- in minutes
+## Built With
 
-	* App coded to calculate when the next train will arrive; this should be
-relative to the current time.
+* JavaScript and JQuery.
+* Firebase
+* Bootstrap 4.0 was used to construct the html pages.
 
-	* Users from many different machines must be able to view same train
-times.
+## License
 
-	* Styling and theme are completely up to you. Get Creative!
+This project is licensed under the MIT License.
 
-###     Example Site
-### 
-	![train homework](Train_Time_Image.png)
+## Acknowledgments
 
-###     Bonus (Extra Challenges)
-### 
-
-	* Consider updating your "minutes to arrival" and "next train time" text
-once every minute. This is significantly more challenging; only attempt this
-if you've completed the actual activity and committed it somewhere on GitHub
-for safekeeping (and maybe create a second GitHub repo).
-
-	* Try adding `update` and `remove` buttons for each train. Let the user
-edit the row's elements-- allow them to change a train's Name, Destination
-and Arrival Time (and then, by relation, minutes to arrival).
-
-	* As a final challenge, make it so that only users who log into the site
-with their Google or GitHub accounts can use your site. You'll need to read
-up on Firebase authentication for this bonus exercise.
-
-	- - -
-
-###     Minimum Requirements
-### 
-	
-	Attempt to complete homework assignment as described in instructions. If
-unable to complete certain portions, please pseudocode these portions to
-describe what remains to be completed.
-
-	- - -
-
-###     Commentary
-	
-	* Modified from orgininal program to update minutes on arrival every
-minute. 
-	* Trains folder set up in Firebase to contain train info. Had
-originally intented to add a timeCounter folder there as well and update the
-timeNumber variable from there (as well as an initialTime of "60"so that the counters 
-would be synched across multiple browsers and update simultaneously. This proved harder 
-than expected, so the intervals are all calculated locally using local variables.
-	*There is a minor bug. If you add a train on one browser, the schedule renders fine.
-However, on a second browser the new train will show up twice until the table refreshes.
-	* Used the "time" type for the First Train time. While this has an hh:mm format, 
-it enters Firebase as an HH:mm format.
+This application was constructed as part of the University of Kansas Full-Stack Web-Development Coding Bootcamp Program offered in conjunction with Trinity Educational Services. Thanks to these institutions for providing the initial project requirements. Code studied in the course activities also served as a guide and provided helpful suggestions for building the application.
